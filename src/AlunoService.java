@@ -7,9 +7,15 @@ public class AlunoService {
 
     public void cadastrar(Aluno aluno) {
         alunos.add(aluno);
+        System.out.println("Aluno " + aluno.getNome() + " cadastrado com sucesso!");
     }
 
-    public List<Aluno> listar() {
+    public List<Aluno> listarTodos() {
         return alunos;
     }
+
+    public Aluno buscarPorMatricula(int matricula) {
+        return null;
+    }
+
 }

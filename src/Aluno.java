@@ -12,11 +12,27 @@ public class Aluno {
         this.nota2 = nota2;
     }
 
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getNota1() {
+        return nota1;
+    }
+
+    public double getNota2() {
+        return nota2;
+    }
+
     public double calcularMedia() {
         return (nota1 + nota2) / 2;
     }
 
-    public boolean estaAprovado() {
-        return calcularMedia() >= 7;
+    public String estaAprovado() {
+        return calcularMedia() >= 7.0 ? "Aprovado" : "Reprovado";
     }
 }
